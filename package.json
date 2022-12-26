@@ -17,6 +17,7 @@
     "@nhost/react": "^0.17.0",
     "@urql/exchange-refocus": "^1.0.0",
     "daisyui": "^2.46.0",
+    "graphql": "^16.6.0",
     "graphql-ws": "^5.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
