@@ -14,6 +14,7 @@ export default function Navbar() {
 
   const signOut = async () => {
     await nhost.auth.signOut();
+    setLoggedIn(false);
   };
 
   useEffect(() => {
