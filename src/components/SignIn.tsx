@@ -6,9 +6,12 @@ interface GenerateInputProps {
   name: string;
   state: string;
   setState: Dispatch<SetStateAction<string>>;
+  type: string;
 }
 
-function GenerateInput({ name, state, setState }: GenerateInputProps) {
+function GenerateInput({
+  name, state, setState, type,
+}: GenerateInputProps) {
   return (
     <div>
       <label className="label" htmlFor={name}>
@@ -19,7 +22,7 @@ function GenerateInput({ name, state, setState }: GenerateInputProps) {
         id={name}
         value={state}
         onChange={(event) => setState(event.currentTarget.value)}
-        type="text"
+        type={type}
         placeholder="Type here"
         className="input input-bordered w-full max-w-xs"
       />
@@ -74,9 +77,15 @@ export default function SignIn() {
         </div>
         <div className="-mt-3 gap-4 card-body items-center">
           <div className="form-control w-full max-w-xs gap-6">
-            <GenerateInput name="Email" state={email} setState={setEmail} />
+            <GenerateInput
+              name="Email"
+              type="email"
+              state={email}
+              setState={setEmail}
+            />
             <GenerateInput
               name="Password"
+              type="password"
               state={password}
               setState={setPassword}
             />
