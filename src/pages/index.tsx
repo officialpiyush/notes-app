@@ -1,7 +1,15 @@
+import { SignedIn, SignedOut } from "@nhost/react";
+import SignIn from "../components/SignIn";
+
 export default function HomePage() {
   return (
     <div>
-      Hello, world!
+      <SignedIn>
+        <div>Welcome!</div>
+      </SignedIn>
+      <SignedOut>
+        <SignIn />
+      </SignedOut>
     </div>
   );
 }
