@@ -526,7 +526,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nhost/nhost-js@npm:^1.7.0":
+"@nhost/nhost-js@npm:1.7.0, @nhost/nhost-js@npm:^1.7.0":
   version: 1.7.0
   resolution: "@nhost/nhost-js@npm:1.7.0"
   dependencies:
@@ -538,6 +538,24 @@ __metadata:
   peerDependencies:
     graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
   checksum: 524d234164a6bfd2f75e744344178a702f70be6d55f865a4186f41b5b8ebc7d92ba4ba69dbcd726794b8406255fce28b594c28d4031f6240441d872982e2b1e9
+  languageName: node
+  linkType: hard
+
+"@nhost/react@npm:^0.17.0":
+  version: 0.17.0
+  resolution: "@nhost/react@npm:0.17.0"
+  dependencies:
+    "@nhost/hasura-auth-js": 1.7.0
+    "@nhost/hasura-storage-js": 0.8.0
+    "@nhost/nhost-js": 1.7.0
+    "@xstate/react": ^3.0.1
+    immer: ^9.0.15
+    jwt-decode: ^3.1.2
+    xstate: ^4.33.5
+  peerDependencies:
+    react: ^17.0.0 || ^18.1.0
+    react-dom: ^17.0.0 || ^18.1.0
+  checksum: d1d94c23c063ccbc1d111414718061737ecee7b80273566844310ca2898836247087fc5cc3976abf6b14f6b4559d7d34ea83c41ec8b7acde8d274f04df411199
   languageName: node
   linkType: hard
 
@@ -1038,6 +1056,25 @@ __metadata:
     micromatch: ^4.0.5
     windicss: ^3.5.6
   checksum: 1da24e9812e05de82ded465c742e6bd0df22af6b84cd1da1f53a6c427e04f6bd2a2b59eaed13352a2caa1fc04cc74e095b60fb6e494564353630f4a885efd97c
+  languageName: node
+  linkType: hard
+
+"@xstate/react@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@xstate/react@npm:3.0.1"
+  dependencies:
+    use-isomorphic-layout-effect: ^1.0.0
+    use-sync-external-store: ^1.0.0
+  peerDependencies:
+    "@xstate/fsm": ^2.0.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    xstate: ^4.33.0
+  peerDependenciesMeta:
+    "@xstate/fsm":
+      optional: true
+    xstate:
+      optional: true
+  checksum: c2ca0efa8ba27b2bf85ba34b0327fea997101ceb372e709b4c32ef772d9baab1b405475c38c064ec81a7eb5d6b974c33c70e2d47237fa5e589bec11a49444de0
   languageName: node
   linkType: hard
 
@@ -3332,6 +3369,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"immer@npm:^9.0.15":
+  version: 9.0.16
+  resolution: "immer@npm:9.0.16"
+  checksum: e9a5ca65c929b329da7a3b7beccf7984271cda7bdd47b2cab619eac3277dcd56598c211b55cc340786b6eff0c06652ac018808d9fd744443f06882364dece6bc
+  languageName: node
+  linkType: hard
+
 "import-fresh@npm:^3.0.0, import-fresh@npm:^3.2.1":
   version: 3.3.0
   resolution: "import-fresh@npm:3.3.0"
@@ -5390,6 +5434,7 @@ __metadata:
     "@commitlint/cli": ^17.3.0
     "@commitlint/config-conventional": ^17.3.0
     "@nhost/nhost-js": ^1.7.0
+    "@nhost/react": ^0.17.0
     "@types/react": ^18.0.26
     "@types/react-dom": ^18.0.9
     "@typescript-eslint/eslint-plugin": ^5.47.0
@@ -6048,6 +6093,27 @@ __metadata:
     graphql: ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     react: ">= 16.8.0"
   checksum: 0376873d95b28a7593c9c791da2df54fbbd079caa283ef0225b51bd169d87108744dc47d3d14417e51f7079439e4dd28427bc7f4d74b22b7c5de36a0dea06855
+  languageName: node
+  linkType: hard
+
+"use-isomorphic-layout-effect@npm:^1.0.0":
+  version: 1.1.2
+  resolution: "use-isomorphic-layout-effect@npm:1.1.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: a6532f7fc9ae222c3725ff0308aaf1f1ddbd3c00d685ef9eee6714fd0684de5cb9741b432fbf51e61a784e2955424864f7ea9f99734a02f237b17ad3e18ea5cb
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:^1.0.0":
+  version: 1.2.0
+  resolution: "use-sync-external-store@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 5c639e0f8da3521d605f59ce5be9e094ca772bd44a4ce7322b055a6f58eeed8dda3c94cabd90c7a41fb6fa852210092008afe48f7038792fd47501f33299116a
   languageName: node
   linkType: hard
 
