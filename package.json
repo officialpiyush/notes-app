@@ -13,11 +13,15 @@
     "postinstall": "husky install"
   },
   "dependencies": {
+    "@nhost/nhost-js": "^1.7.0",
+    "@urql/exchange-refocus": "^1.0.0",
     "daisyui": "^2.46.0",
+    "graphql-ws": "^5.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.6.1",
-    "react-router-dom": "^6.6.1"
+    "react-router-dom": "^6.6.1",
+    "urql": "^3.0.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
