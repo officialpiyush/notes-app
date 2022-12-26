@@ -1,4 +1,5 @@
 import CreateNote from "./notes/CreateNote";
+import NotesCollection from "./notes/NotesCollection";
 
 export default function Notes() {
   return (
@@ -6,6 +7,8 @@ export default function Notes() {
       <CreateNote />
 
       <hr className="border-stone-600" />
+
+      <NotesCollection />
     </div>
   );
 }
