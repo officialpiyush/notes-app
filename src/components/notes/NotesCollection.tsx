@@ -11,7 +11,7 @@ export default function NotesCollection() {
     return <div>Loading...</div>;
   }
 
-  if (data && data.notes && data.notes.length) {
+  if (data && data.notes && data.notes.length > 0) {
     return (
       <div className="flex flex-col gap-2">
         {data.notes.map((d: any) => (
